@@ -24,10 +24,15 @@ Here, the pre-trained VGG19 network is tested against the 150 image dataset extr
 
 ## Inventory:
 a. VGG19 network code
+
 b. classification code
+
 c. image resize code
+
 d. results
+
 e. readme
+
 f. license
 
 ## Keywords:
