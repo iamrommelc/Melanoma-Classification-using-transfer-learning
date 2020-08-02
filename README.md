@@ -7,3 +7,13 @@ Malignant melanoma is a form of skin cancer that develops from melanocytic cells
 ![VGG19](https://user-images.githubusercontent.com/66628385/89116017-a1120e80-d4ac-11ea-881c-830625a73062.PNG)
 
 Fig. The custom CNN, also known as VGG19 model is used for the purpose of training and testing.
+
+## procedure used:
+### 1. Data Pre-Processing:
+Here, data from ISBI 2016 is taken and sampled first to a sample size as follows:
+346 images from class 0 and 173 images from class 1(later oversampled to 346 to balance the dataset) for training set.
+For validation set, first 75 images from the validation set of each class are taken.
+For testing set, first 75 images from each class of ISBI 2017 dataset are taken.
+Data images are augmented by horizontal rotation and increase in saturation.
+
+
