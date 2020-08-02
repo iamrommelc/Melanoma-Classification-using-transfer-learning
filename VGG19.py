@@ -2,7 +2,7 @@ import tensorflow
 print(tensorflow.__version__)
 
 from keras.applications import VGG19
-vgg_19= VGG19(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+vgg_19 = VGG19(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
 
 for layer in vgg_19.layers[:-4]:
    layer.trainable = False
@@ -31,8 +31,7 @@ model.add(layers.Dense(1,activation='sigmoid'))
 
 model.summary()
 
-train_datagen = ImageDataGenerator(
-                                   rescale=1./255,
+train_datagen = ImageDataGenerator(rescale=1./255,
                                    rotation_range=20,
                                    width_shift_range=0.2,
                                    height_shift_range=0.2,
