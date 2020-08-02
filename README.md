@@ -8,7 +8,7 @@ Malignant melanoma is a form of skin cancer that develops from melanocytic cells
 
 Fig. The custom CNN, also known as VGG19 model is used for the purpose of training and testing.
 
-## procedure used:
+## Procedure used:
 ### 1. Data Pre-Processing:
 Here, data from ISBI 2016 is taken and sampled first to a sample size as follows:
 346 images from class 0 and 173 images from class 1(later oversampled to 346 to balance the dataset) for training set.
@@ -16,4 +16,15 @@ For validation set, first 75 images from the validation set of each class are ta
 For testing set, first 75 images from each class of ISBI 2017 dataset are taken.
 Data images are augmented by horizontal rotation and increase in saturation.
 
+### 2. Transfer Learning of CNN:
+Here, a pre-trained VGG19 network (pre-trained with ImageNet dataset) is taken and trained with the new dataset and validated. Once results are stored and observed, classification begins.
+
+### 3. Classification:
+Here, the pre-trained VGG19 network is tested against the 150 image dataset extracted from ISBI 2017 dataset and lassified accordingly. The results of the performance matrix are stored and classification results are displayed.
+
+## Inventory:
+
+
+## Keywords:
+Melanoma, Transfer Learning, Deep Learning, Augmentation, VGG19.
 
