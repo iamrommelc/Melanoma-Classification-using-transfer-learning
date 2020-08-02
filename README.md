@@ -4,3 +4,5 @@ Malignant melanoma is a form of skin cancer that develops from melanocytic cells
 
 # Experimental Procedure
 
+![image](https://user-images.githubusercontent.com/66628385/89115960-09acbb80-d4ac-11ea-8834-aace775a80b3.png)
+Fig. The custom CNN, also known as VGG19 model is used for the purpose of training and testing.
